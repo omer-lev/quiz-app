@@ -8,7 +8,7 @@ $('li').on('click', (e) => {
 
 $.ajax({
     method: 'GET',
-    url: 'https://opentdb.com/api.php?amount=10'
+    url: 'https://opentdb.com/api.php?amount=10&type=multiple'
 }).done(res => {
     $('.loading').css('display', 'none');
 
