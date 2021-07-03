@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,4,99,1) 0%, rgba(0,212,255,1) 100%);    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#title {
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: white;
+    border-bottom: 1px solid darkgray;
+}
+
+.container {
+    width: 50%;
+    padding: 20% 0;
+    margin: 8vh auto;
+    box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.308);
+    background: rgba(211, 211, 211, 0.61);
+}
+
+.options ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px 5px 0;
+    background: lightgray;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.options ul li span {
+    width: 9%;
+    text-align: center;
+    border-right: 1px solid gray;
+}
+
+.question {
+    padding: 5% 5px;
+    background: rgb(37, 37, 73);
+    border-bottom: 1px solid gray;
+}
+
+.question h3 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+
+.question h2 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.counter {
+    background: rgb(37, 37, 73);
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.final-score {
+    background-color: lightgray;
+    padding: 20% 0;
+    text-align: center;
+}
+
+.final-score h2 {
+    font-weight: 500;
+}
+
+.loading {
+    margin: 0 auto;
+    border: 13px solid gray;
+    border-top-color: rgb(37, 37, 73);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1.5s infinite linear;
+}
+
+.disclaimer {
+    position: absolute;
+    bottom: 1%;
+    color: rgba(255, 255, 255, 0.575);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
